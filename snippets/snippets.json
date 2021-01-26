@@ -2,14 +2,14 @@
    "Import Module": {
       "prefix": "imp",
       "body": [
-         "import $0 from '$1'"
+         "import $1 from '$2'"
       ],
       "description": "Import Module"
    },
    "Import Named Export": {
       "prefix": "imn",
       "body": [
-         "import { $0 } from '$1'"
+         "import { $1 } from '$2'"
       ],
       "description": "Import Named Export"
    },
@@ -28,23 +28,42 @@
       "description": "Import useEffect"
    },
    "Import useState and useEffect": {
-      "prefix": "imse",
+      "prefix": "ima",
       "body": [
          "import { useState, useEffect } from 'react'"
       ],
       "description": "Import useState and useEffect"
    },
+   "Named Function": {
+      "prefix": "nfn",
+      "body": [
+         "const $1 = ($3) => {",
+         "\t$2",
+         "}"
+      ],
+      "description": "Create a named function"
+   },
+   "Anonymous Function": {
+      "prefix": "anfn",
+      "body": [
+         "($2) => {",
+         "\t$1",
+         "}"
+      ],
+      "description": "Create an anonymous function"
+   },
    "State Component Return": {
       "prefix": "slr",
       "body": [
-         "const $0 = ({ $2 }) => {",
-         "\treturn ( ",
-         "<>",
-         "\t$1",
-         "</>",
-         ")}",
+         "const $1 = () => {",
+         "\treturn (",
+         "\t\t<>",
+         "\t\t\t$2",
+         "\t\t</>",
+         "\t)",
+         "}",
          "",
-         "export default $0"
+         "export default $1"
       ],
       "description": "React Functional Component Return"
    },
@@ -60,7 +79,7 @@
       "body": [
          "useEffect(() => {",
          "\t$1",
-         "}, []);"
+         "}, [])"
       ],
       "description": "useEffect Hook"
    }
