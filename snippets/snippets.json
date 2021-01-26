@@ -55,15 +55,13 @@
    "State Component Return": {
       "prefix": "slr",
       "body": [
-         "const $1 = () => {",
+         "export default function $1() {",
          "\treturn (",
          "\t\t<>",
          "\t\t\t$2",
          "\t\t</>",
          "\t)",
-         "}",
-         "",
-         "export default $1"
+         "}"
       ],
       "description": "React Functional Component Return"
    },
