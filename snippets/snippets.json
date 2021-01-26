@@ -1,0 +1,67 @@
+{
+   "Import Module": {
+      "prefix": "imp",
+      "body": [
+         "import $0 from '$1'"
+      ],
+      "description": "Import Module"
+   },
+   "Import Named Export": {
+      "prefix": "imn",
+      "body": [
+         "import { $0 } from '$1'"
+      ],
+      "description": "Import Named Export"
+   },
+   "Import useState": {
+      "prefix": "ims",
+      "body": [
+         "import { useState } from 'react'"
+      ],
+      "description": "Import useState"
+   },
+   "Import useEffect": {
+      "prefix": "ime",
+      "body": [
+         "import { useEffect } from 'react'"
+      ],
+      "description": "Import useEffect"
+   },
+   "Import useState and useEffect": {
+      "prefix": "imse",
+      "body": [
+         "import { useState, useEffect } from 'react'"
+      ],
+      "description": "Import useState and useEffect"
+   },
+   "State Component Return": {
+      "prefix": "slr",
+      "body": [
+         "const $0 = ({ $2 }) => {",
+         "\treturn ( ",
+         "<>",
+         "\t$1",
+         "</>",
+         ")}",
+         "",
+         "export default $0"
+      ],
+      "description": "React Functional Component Return"
+   },
+   "useState": {
+      "prefix": "uss",
+      "body": [
+         "const [${1}, set${1/(.*)/${1:/capitalize}/}] = useState($2)"
+      ],
+      "description": "useState Hook"
+   },
+   "useEffect": {
+      "prefix": "uef",
+      "body": [
+         "useEffect(() => {",
+         "\t$1",
+         "}, []);"
+      ],
+      "description": "useEffect Hook"
+   }
+}
