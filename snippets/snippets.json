@@ -2,14 +2,14 @@
    "Import Module": {
       "prefix": "imp",
       "body": [
-         "import $1 from '$2'"
+         "import $2 from '$1'"
       ],
       "description": "Import Module"
    },
    "Import Named Export": {
       "prefix": "imn",
       "body": [
-         "import { $1 } from '$2'"
+         "import { $2 } from '$1'"
       ],
       "description": "Import Named Export"
    },
@@ -42,6 +42,17 @@
          "}"
       ],
       "description": "Create a named function"
+   },
+   "Create Hook": {
+      "prefix": "nfh",
+      "body": [
+         "const use$1 = () => {",
+         "\t$2",
+         "",
+         "\treturn {}",
+         "}"
+      ],
+      "description": "Create a custom hook"
    },
    "Anonymous Function": {
       "prefix": "anfn",

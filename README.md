@@ -16,3 +16,4 @@ Collection of React commands I use the most.
 | `uef`   | useEffect                        |
 | `nfn`   | Named function                   |
 | `anfn`  | Anonymous function               |
+| `nfh`   | Custom hook                      |
