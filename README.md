@@ -17,3 +17,4 @@ Collection of React commands I use the most.
 | `nfn`   | Named function                   |
 | `anfn`  | Anonymous function               |
 | `nfh`   | Custom hook                      |
+| `exp`   | Export default file              |

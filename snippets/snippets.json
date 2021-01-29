@@ -91,5 +91,12 @@
          "}, [])"
       ],
       "description": "useEffect Hook"
+   },
+   "Export default": {
+      "prefix": "exp",
+      "body": [
+         "export { default } from '$1'"
+      ],
+      "description": "Export default file"
    }
 }
